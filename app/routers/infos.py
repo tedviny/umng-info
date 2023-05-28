@@ -16,9 +16,9 @@ def add_infos(info: Info):
 @router.put("/{id}", tags=["Update information"])
 def update_infos(id: str, info: Info):
     update_info(id,info)
-    return "Information is updated"
+    return "Information successfully updated"
 
-@router.delete("/{id}", tags=["Update information"])
+@router.delete("/{id}", tags=["Delete information"])
 def delete_infos(id: str):
     delete_info(id)
     return "Information successfully deleted"
