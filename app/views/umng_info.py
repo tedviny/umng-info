@@ -1,7 +1,7 @@
 import logging
-from models.umng_info import Info
-from config.db import conn
-from schemas.info import infoEntity, infosEntity
+from app.models.umng_info import Info
+from app.config.db import conn
+from app.schemas.info import infoEntity, infosEntity
 from bson import ObjectId
 
 logging.basicConfig(level=logging.DEBUG)
